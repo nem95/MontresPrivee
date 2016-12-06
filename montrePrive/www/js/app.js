@@ -30,6 +30,11 @@ angular.module('starter', ['ionic', 'HomeController'])
       url: '/home',
       templateUrl: 'templates/home.html'
     })
+
+    $stateProvider.state('automatique', {
+      url: '/automatique',
+      templateUrl: 'templates/automatique.html'
+    })
   /*$stateProvider.state('login', {
     url: '/login',
     templateUrl: 'templates/login.html'
@@ -37,3 +42,6 @@ angular.module('starter', ['ionic', 'HomeController'])
 
   $urlRouterProvider.otherwise('/home')
 })
+
+
+
