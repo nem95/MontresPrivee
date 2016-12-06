@@ -1,1 +1,64 @@
-/* Empty. Add your own CSS if you like */
+/*** HEADER ET MENU ***/
+
+.header-transparent{
+  background-color: #000;
+  background-size: 0;
+}
+.logo{
+  width: 30%;
+  margin-top: 8px;
+}
+.icon-menu{
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  width: 8%;
+  height: 25px;
+}
+.bar, .title{height: 60px !important;}
+.avatar{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.scroll-content{top: 60px !important;}
+
+/*** SLIDER ***/
+.time-slide{
+  width: 100%;
+  height: calc(40vh - 60px);
+  background-color: black;
+  overflow:hidden;
+}
+.swiper-slide img{
+  min-width: 100%;
+  max-width: 800px;
+  height: calc(40vh - 60px);
+}
+
+/*** CONTENT HOME PAGE ***/
+.cat-femme, .cat-homme, .contact{
+  width: 100%;
+  height: 20vh;
+}
+.cat-femme{
+  background-color: red;
+}
+.cat-femme img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  }
+.cat-homme{
+  background-color: blue;
+}
+.contact{
+  background-color: green;
+}
