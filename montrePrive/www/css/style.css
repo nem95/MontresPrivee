@@ -62,3 +62,97 @@
 .contact{
   background-color: green;
 }
+/*
+#id_div{
+  display:block;
+  float:left;
+  border-style: solid;
+  border-color: grey;
+  width:100%;
+  height:100%;
+  position: relative;
+
+
+}
+#id_div2{
+  display:block;
+  float:left;
+  border-style: solid;
+  border-color: grey;
+  width:100%;
+  height:100%;
+}
+.overlay{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0 , 0 , 0.5);
+}
+#id_div3{
+  display:block;
+  float:left;
+  border-style: solid;
+  border-color: grey;
+  width:100%;
+  height:100%;
+}
+ 
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.quartz {
+  color: white;
+  position: absolute;
+  text-align: center;
+ 
+  width: 100%;
+  margin-top: 100px;
+  font-size: 24px;
+}
+*/
+.quartz {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+.quartz img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.quartz img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.autres-montres {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+.autres-montres img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.autres-montres img.portrait {
+  width: 100%;
+  height: auto;
+}
