@@ -28,14 +28,14 @@
 /*** SLIDER ***/
 .time-slide{
   width: 100%;
-  height: calc(45vh - 60px);
+  height: calc(40vh - 60px);
   background-color: black;
   overflow:hidden;
 }
 .swiper-slide img{
   min-width: 100%;
   max-width: 800px;
-  height: calc(45vh - 60px);
+  height: calc(40vh - 60px);
 }
 
 
@@ -70,6 +70,96 @@ a{
 .contact{
   background-color: green;
 }
+
+/*** ADAM CSS ***/
+.overlay{
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0 , 0 , 0.4);
+}
+.automat {
+  position: relative;
+  display: flex;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.automat img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_quartz {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.section_quartz img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_manuelles {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.section_manuelles img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_manuelles img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.marques {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.marques img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.marques img.portrait {
+  width: 100%;
+  height: auto;
+}
 /*
 #id_div{
   display:block;
@@ -90,12 +180,7 @@ a{
   width:100%;
   height:100%;
 }
-.overlay{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0 , 0 , 0.5);
-}
+
 #id_div3{
   display:block;
   float:left;
@@ -206,6 +291,8 @@ img {
   width: 100%;
   height: 100%;
   position: relative;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,7 +302,6 @@ img {
   font-size: 30px;
 }
 
-<<<<<<< HEAD
 /*** CONTENT QUARTZ PAGE ***/
 .quartz {
   position: relative;
@@ -230,37 +316,14 @@ img {
   top: 50%;
   height: 100%;
   width: auto;
-=======
-.automat {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 18.5vh;
-  overflow: hidden;
+
 }
-.automat img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
-  width: 100%;
->>>>>>> adam
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
-<<<<<<< HEAD
 .quartz img.portrait {
-=======
+}
 .automat img.portrait {
->>>>>>> adam
   width: 100%;
   height: auto;
 }
-
-<<<<<<< HEAD
-
-
 
 .autres-montres {
   position: relative;
@@ -273,55 +336,15 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
+}
 
-=======
-.section_quartz {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 18.5vh;
-  overflow: hidden;
-}
-.section_quartz img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
->>>>>>> adam
-  width: 100%;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
-<<<<<<< HEAD
 .autres-montres img.portrait {
-=======
+}
 .section_quartz img.portrait {
->>>>>>> adam
+
   width: 100%;
   height: auto;
 }
-
-<<<<<<< HEAD
-
-.text1 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 25px;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-}
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> edgar
 
 .dark {
   background-color: black;
@@ -341,69 +364,13 @@ img {
   font-color: #957850;
 }
 
-<<<<<<< HEAD
-.dark {
-  background-color: black;
-}
-.identifiant {
-  text-align: center;
-  margin-top: 20px;
-  font-color: #957850;
-}
-.but {
-  margin-top: 20px;
-  text-align: center;
-  font-color: #957850;
-}
-
-.but p {
-  font-color: #957850;
-}
-=======
-.section_manuelles {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 18vh;
-  overflow: hidden;
-}
-.section_manuelles img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
-  width: 100%;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
 .section_manuelles img.portrait {
   width: 100%;
   height: auto;
 }
 
-.marques {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 18vh;
-  overflow: hidden;
-}
-.marques img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: auto;
-  width: 100%;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
+
 .marques img.portrait {
   width: 100%;
   height: auto;
 }
-
->>>>>>> adam
-=======
->>>>>>> edgar

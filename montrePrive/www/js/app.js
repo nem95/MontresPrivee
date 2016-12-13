@@ -36,6 +36,14 @@ angular.module('starter', ['ionic', 'HomeController','QuartzController','Automat
     url: '/quartz',
     templateUrl: 'templates/quartz.html'
   })
+  $stateProvider.state("selection-quartz",{
+    url : "/selection-quartz/:id", // tu rajoutes le paramètre id
+    templateUrl : "templates/selection-quartz.html",
+  });
+  $stateProvider.state('automatique', {
+    url: '/automatique',
+    templateUrl: 'templates/automatique.html'
+  })
   $stateProvider.state('model', {
     url: '/model/:id',
     templateUrl: 'templates/model.html'
@@ -43,14 +51,6 @@ angular.module('starter', ['ionic', 'HomeController','QuartzController','Automat
   $stateProvider.state('profil', {
     url: '/profil',
     templateUrl: 'templates/profil.html'
-  });
-  $stateProvider.state('automatique', {
-    url: '/automatique',
-    templateUrl: 'templates/automatique.html'
-  })
-  $stateProvider.state("selection-quartz",{
-    url : "/selection-quartz/:id", // tu rajoutes le paramètre id
-    templateUrl : "templates/selection-quartz.html",
   });
   /*$stateProvider.state('login', {
     url: '/login',
