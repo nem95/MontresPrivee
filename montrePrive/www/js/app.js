@@ -23,6 +23,9 @@ angular.module('starter', ['ionic', 'HomeController','QuartzController'])
   });
 })
 
+
+
+
 .config(function($stateProvider, $urlRouterProvider) {
 
 
@@ -33,6 +36,14 @@ angular.module('starter', ['ionic', 'HomeController','QuartzController'])
   $stateProvider.state('quartz', {
     url: '/quartz',
     templateUrl: 'templates/quartz.html'
+  })
+  $stateProvider.state('model', {
+    url: '/model/:id',
+    templateUrl: 'templates/quartz.html'
+  })
+  $stateProvider.state('profil', {
+    url: '/profil',
+    templateUrl: 'templates/profil.html'
   });
   /*$stateProvider.state('login', {
     url: '/login',
