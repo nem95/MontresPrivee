@@ -38,23 +38,7 @@
   height: calc(45vh - 60px);
 }
 
-.dark {
-  background-color: black;
-}
-.identifiant {
-  text-align: center;
-  margin-top: 20px;
-  font-color: #957850;
-}
-.but {
-  margin-top: 20px;
-  text-align: center;
-  font-color: #957850;
-}
 
-.but p {
-  font-color: #957850;
-}
 
 /*** CONTENT HOME PAGE ***/
 a{
@@ -136,6 +120,11 @@ img {
   font-size: 24px;
 }
 */
+
+
+
+
+/*** CONTENT QUARTZ PAGE ***/
 .quartz {
   position: relative;
   width: 100%;
@@ -328,9 +317,31 @@ img {
   font-size: 30px;
 }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> edgar
 
+.dark {
+  background-color: black;
+}
+.identifiant {
+  text-align: center;
+  margin-top: 20px;
+  font-color: #957850;
+}
+.but {
+  margin-top: 20px;
+  text-align: center;
+  font-color: #957850;
+}
+
+.but p {
+  font-color: #957850;
+}
+
+<<<<<<< HEAD
 .dark {
   background-color: black;
 }
@@ -394,3 +405,5 @@ img {
 }
 
 >>>>>>> adam
+=======
+>>>>>>> edgar

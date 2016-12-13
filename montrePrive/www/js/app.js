@@ -48,6 +48,10 @@ angular.module('starter', ['ionic', 'HomeController','QuartzController','Automat
     url: '/automatique',
     templateUrl: 'templates/automatique.html'
   })
+  $stateProvider.state("selection-quartz",{
+    url : "/selection-quartz/:id", // tu rajoutes le paramètre id
+    templateUrl : "templates/selection-quartz.html",
+  });
   /*$stateProvider.state('login', {
     url: '/login',
     templateUrl: 'templates/login.html'
