@@ -34,6 +34,7 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/HomeController.js"></script>
+    <script src="js/QuartzController.js"></script>
 
 
   </head>
@@ -48,7 +49,7 @@
 
             <ion-nav-buttons side="left">
               <!-- Toggle left side menu -->
-              <img src="img/menu-bars.png" alt="" menu-toggle="left" class=" icon-menu ">
+              <img src="img/menu-bars.png" alt="" menu-toggle="left" class="icon-menu">
             </ion-nav-buttons>
 
           </ion-nav-bar>
@@ -58,9 +59,9 @@
           </ion-nav-view>
 
       </ion-side-menu-content>
-      <ion-side-menu side="left" >
+      <ion-side-menu side="left" class="dark">
         <ion-list>
-          <ion-item  menu-close="">
+          <ion-item  menu-close="" class="dark">
             <div class="col-md-12  text-center">
               <a href="/#/profil/{{user.id}}" ng-click="loadProfilCu({{user.id}});">
               <img src="../img/default-user.png" alt="avatar" class="avatar">
@@ -72,6 +73,9 @@
           </ion-item>
           <ion-item menu-close="" ui-sref="event_create">
             new event
+          </ion-item>
+          <ion-item menu-close="" ui-sref="quartz">
+            Femme
           </ion-item>
           <ion-item menu-close="" ui-sref="profil">
             Profil
