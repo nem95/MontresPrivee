@@ -11,11 +11,13 @@ angular.module("HomeController", [])
 
       ];
 
-      $scope.automat="http://www.clairediterzi.fr/wp-content/uploads/2015/12/montre-automatique.jpg";
+      $scope.automat="https://montre-automatique.com/wp-content/uploads/2014/02/seagull-light-380x565.jpg";
 
-      $scope.section_quartz="http://www.clairediterzi.fr/wp-content/uploads/2015/12/montre-automatique.jpg";
+      $scope.section_quartz="https://www.bijourama.com/media/produits/festina-montres/img/montre-festina-f16822-2-montre-multifonctions-quartz-hommef16822_2_680x680.jpg";
 
-      $scope.marques="http://maison1.advcdn.net/images/medias/000/038/000038945/660.jpg"; 
+      $scope.section_manuelles="http://www.montres-passion.fr/wp-content/uploads/2013/12/Montre-Breva-G%C3%A9nie-1-barom%C3%A8tre-m%C3%A9canique.jpg";
+      
+      $scope.marques="http://nttw.co/wp-content/uploads/2015/08/fondationlouisvuitton-interieur-jaune-plan-deau-tendances-design-media-influenceur-trend1.jpg"; 
 
       $scope.options = {
         effect: 'fade',

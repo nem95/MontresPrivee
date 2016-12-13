@@ -28,14 +28,14 @@
 /*** SLIDER ***/
 .time-slide{
   width: 100%;
-  height: calc(40vh - 60px);
+  height: calc(45vh - 60px);
   background-color: black;
   overflow:hidden;
 }
 .swiper-slide img{
   min-width: 100%;
   max-width: 800px;
-  height: calc(40vh - 60px);
+  height: calc(45vh - 60px);
 }
 
 /*** CONTENT HOME PAGE ***/
@@ -124,7 +124,7 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: 20vh;
+  height: 18.5vh;
   overflow: hidden;
 }
 .automat img {
@@ -146,7 +146,7 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: 20vh;
+  height: 18.5vh;
   overflow: hidden;
 }
 .section_quartz img {
@@ -164,11 +164,33 @@
   height: auto;
 }
 
+.section_manuelles {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 18vh;
+  overflow: hidden;
+}
+.section_manuelles img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_manuelles img.portrait {
+  width: 100%;
+  height: auto;
+}
+
 .marques {
   position: relative;
   display: flex;
   width: 100%;
-  height: 20vh;
+  height: 18vh;
   overflow: hidden;
 }
 .marques img {
@@ -185,3 +207,4 @@
   width: 100%;
   height: auto;
 }
+
