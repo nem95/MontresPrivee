@@ -1,5 +1,5 @@
 <ion-view view-title='<img src="img/logo.png" alt="" class="logo">' ng-controller="quartzController">
-    <ion-content scroll='true'>
+    <ion-content scroll='true' class="dark">
 <!--<ion-slides class="time-slide" options="options" slider="data.slider">
         <ion-slide-page ng-repeat="img in slide track by $index">
           <div><img src="{{img}}" alt="" ></div>
@@ -10,15 +10,15 @@
 <div class="quartz">
   <div><img src="{{montres}}" alt=""></div>
     <div class="text1">
-      <p>Sélection</p>
-      <p>Quartz</p>
+      <p>Sélection <br>
+        Quartz</p>
     </div>
 </div>
 
 
 
 <div class="autres-montres" ng-repeat="montresfond in montresfond track by $index">
-  <a href="/model/{{montresfond.id}}"><img src="{{montresfond.img}}" alt=""></a>
+  <a href="#/selection-quartz/{{montresfond.id}}"><img src="{{montresfond.img}}" alt=""></a>
 </div>
 
 
