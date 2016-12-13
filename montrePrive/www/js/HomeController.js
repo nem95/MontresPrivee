@@ -8,7 +8,14 @@ angular.module("HomeController", [])
         "http://img1.gtsstatic.com/montre/la-montre-grandmaster-chime-ref-5175-de-patek-philippe_160321_w460.jpg",
         "http://www.masculin.com/images/article/11407/th/montre-breitling-bentley-b06-s-800x.jpg",
         "http://image.excite.fr/hommes/guide/montres-homme-de-luxe-default-33931-0.jpg",
+
       ];
+
+      $scope.automat="http://www.clairediterzi.fr/wp-content/uploads/2015/12/montre-automatique.jpg";
+
+      $scope.section_quartz="http://www.clairediterzi.fr/wp-content/uploads/2015/12/montre-automatique.jpg";
+
+      $scope.marques="http://maison1.advcdn.net/images/medias/000/038/000038945/660.jpg"; 
 
       $scope.options = {
         effect: 'fade',

@@ -119,3 +119,69 @@
   color: white;
   font-size: 30px;
 }
+
+.automat {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+}
+.automat img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.automat img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.section_quartz {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+}
+.section_quartz img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_quartz img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.marques {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+}
+.marques img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.marques img.portrait {
+  width: 100%;
+  height: auto;
+}
