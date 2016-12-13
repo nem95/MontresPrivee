@@ -28,14 +28,14 @@
 /*** SLIDER ***/
 .time-slide{
   width: 100%;
-  height: calc(40vh - 60px);
+  height: calc(45vh - 60px);
   background-color: black;
   overflow:hidden;
 }
 .swiper-slide img{
   min-width: 100%;
   max-width: 800px;
-  height: calc(40vh - 60px);
+  height: calc(45vh - 60px);
 }
 
 .dark {
@@ -57,6 +57,12 @@
 }
 
 /*** CONTENT HOME PAGE ***/
+a{
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
 .cat-femme, .cat-homme, .contact{
   width: 100%;
   height: 20vh;
@@ -209,6 +215,7 @@ img {
 
 .text1 {
   width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -219,6 +226,7 @@ img {
   font-size: 30px;
 }
 
+<<<<<<< HEAD
 /*** CONTENT QUARTZ PAGE ***/
 .quartz {
   position: relative;
@@ -233,15 +241,35 @@ img {
   top: 50%;
   height: 100%;
   width: auto;
+=======
+.automat {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 18.5vh;
+  overflow: hidden;
+}
+.automat img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+>>>>>>> adam
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
+<<<<<<< HEAD
 .quartz img.portrait {
+=======
+.automat img.portrait {
+>>>>>>> adam
   width: 100%;
   height: auto;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -257,16 +285,35 @@ img {
   left: 50%;
   top: 50%;
 
+=======
+.section_quartz {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 18.5vh;
+  overflow: hidden;
+}
+.section_quartz img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+>>>>>>> adam
   width: 100%;
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
+<<<<<<< HEAD
 .autres-montres img.portrait {
+=======
+.section_quartz img.portrait {
+>>>>>>> adam
   width: 100%;
   height: auto;
 }
 
+<<<<<<< HEAD
 
 .text1 {
   width: 100%;
@@ -301,3 +348,49 @@ img {
 .but p {
   font-color: #957850;
 }
+=======
+.section_manuelles {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 18vh;
+  overflow: hidden;
+}
+.section_manuelles img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_manuelles img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.marques {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 18vh;
+  overflow: hidden;
+}
+.marques img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.marques img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+>>>>>>> adam
