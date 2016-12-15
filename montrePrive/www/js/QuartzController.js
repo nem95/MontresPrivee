@@ -50,8 +50,10 @@ angular.module("QuartzController", [])
 
       console.log($scope.montresfond);
 
-      var id = $stateParams.id; // Reading productId from URL
+      var id = $stateParams.id; // Reading productid from URL
       console.log(id);
       $scope.cover = $scope.montresfond[id].img
       
   })
+
+
