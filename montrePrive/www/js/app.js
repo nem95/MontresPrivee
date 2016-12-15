@@ -3,8 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic', 'HomeController','QuartzController'])
-
+angular.module('starter', ['ionic', 'HomeController','QuartzController','AutomatiqueController'])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
@@ -37,17 +36,21 @@ angular.module('starter', ['ionic', 'HomeController','QuartzController'])
     url: '/quartz',
     templateUrl: 'templates/quartz.html'
   })
+  $stateProvider.state("selection-quartz",{
+    url : "/selection-quartz/:id", // tu rajoutes le paramètre id
+    templateUrl : "templates/selection-quartz.html",
+  });
+  $stateProvider.state('automatique', {
+    url: '/automatique',
+    templateUrl: 'templates/automatique.html'
+  })
   $stateProvider.state('model', {
     url: '/model/:id',
-    templateUrl: 'templates/quartz.html'
+    templateUrl: 'templates/model.html'
   })
   $stateProvider.state('profil', {
     url: '/profil',
     templateUrl: 'templates/profil.html'
-  });
-  $stateProvider.state("selection-quartz",{
-    url : "/selection-quartz/:id", // tu rajoutes le paramètre id
-    templateUrl : "templates/selection-quartz.html",
   });
   /*$stateProvider.state('login', {
     url: '/login',

@@ -18,6 +18,9 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/quartz.css" rel="stylesheet">
+    <link href="css/automatique.css" rel="stylesheet">
+    <link href="css/manuelle.css" rel="stylesheet">
 
 
 
@@ -35,6 +38,7 @@
     <script src="js/app.js"></script>
     <script src="js/HomeController.js"></script>
     <script src="js/QuartzController.js"></script>
+    <script src="js/AutomatiqueController.js"></script>
 
 
   </head>
@@ -46,10 +50,14 @@
             <ion-nav-back-button></ion-nav-back-button>
 
             <!-- center logo or name page -->
+            <ion-nav-title>
+               <img src="img/logo.png" alt="" class="logo">
+            </ion-nav-title>
 
             <ion-nav-buttons side="left">
               <!-- Toggle left side menu -->
               <img src="img/menu-bars.png" alt="" menu-toggle="left" class="icon-menu">
+
             </ion-nav-buttons>
 
           </ion-nav-bar>
@@ -61,7 +69,7 @@
       </ion-side-menu-content>
       <ion-side-menu side="left" class="dark">
         <ion-list>
-          <ion-item  menu-close="" class="dark">
+          <ion-item menu-close="" class="dark">
             <div class="col-md-12  text-center">
               <a href="/#/profil/{{user.id}}" ng-click="loadProfilCu({{user.id}});">
               <img src="../img/default-user.png" alt="avatar" class="avatar">
@@ -80,7 +88,7 @@
           <ion-item menu-close="" ui-sref="profil">
             Profil
           </ion-item>
-          <ion-item menu-close=""  ui-sref="login">
+          <ion-item menu-close="" ui-sref="login">
             Deconnexion
           </ion-item>
         </ion-list>
