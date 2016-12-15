@@ -8,7 +8,16 @@ angular.module("HomeController", [])
         "http://img1.gtsstatic.com/montre/la-montre-grandmaster-chime-ref-5175-de-patek-philippe_160321_w460.jpg",
         "http://www.masculin.com/images/article/11407/th/montre-breitling-bentley-b06-s-800x.jpg",
         "http://image.excite.fr/hommes/guide/montres-homme-de-luxe-default-33931-0.jpg",
+
       ];
+
+      $scope.automat="https://montre-automatique.com/wp-content/uploads/2014/02/seagull-light-380x565.jpg";
+
+      $scope.section_quartz="https://www.bijourama.com/media/produits/festina-montres/img/montre-festina-f16822-2-montre-multifonctions-quartz-hommef16822_2_680x680.jpg";
+
+      $scope.section_manuelles="http://www.montres-passion.fr/wp-content/uploads/2013/12/Montre-Breva-G%C3%A9nie-1-barom%C3%A8tre-m%C3%A9canique.jpg";
+      
+      $scope.marques="http://nttw.co/wp-content/uploads/2015/08/fondationlouisvuitton-interieur-jaune-plan-deau-tendances-design-media-influenceur-trend1.jpg"; 
 
       $scope.options = {
         effect: 'fade',

@@ -1,0 +1,17 @@
+<ion-view   ng-controller="automatiqueController">
+    <ion-content scroll='true'>
+
+      <div class="cat-automatique">
+        <div><img src="{{cover}}" alt="" ></div>
+        <div class="text1">
+        	<p>Categorie <br>
+        		Automatique</p>
+        </div>
+      </div>
+
+      <div class="cat-montre1" ng-repeat="montres in montre track by $index">
+        <img src="{{montres}}" alt="Photo2">
+      </div>
+
+    </ion-content>
+</ion-view>

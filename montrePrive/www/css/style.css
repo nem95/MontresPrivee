@@ -38,7 +38,15 @@
   height: calc(40vh - 60px);
 }
 
+
+
 /*** CONTENT HOME PAGE ***/
+a{
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
 .cat-femme, .cat-homme, .contact{
   width: 100%;
   height: 20vh;
@@ -61,4 +69,308 @@
 }
 .contact{
   background-color: green;
+}
+
+/*** ADAM CSS ***/
+.overlay{
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0 , 0 , 0.4);
+}
+.automat {
+  position: relative;
+  display: flex;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.automat img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_quartz {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.section_quartz img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_manuelles {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.section_manuelles img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.section_manuelles img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.marques {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.marques img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.marques img.portrait {
+  width: 100%;
+  height: auto;
+}
+/*
+#id_div{
+  display:block;
+  float:left;
+  border-style: solid;
+  border-color: grey;
+  width:100%;
+  height:100%;
+  position: relative;
+
+
+}
+#id_div2{
+  display:block;
+  float:left;
+  border-style: solid;
+  border-color: grey;
+  width:100%;
+  height:100%;
+}
+
+#id_div3{
+  display:block;
+  float:left;
+  border-style: solid;
+  border-color: grey;
+  width:100%;
+  height:100%;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.quartz {
+  color: white;
+  position: absolute;
+  text-align: center;
+
+  width: 100%;
+  margin-top: 100px;
+  font-size: 24px;
+}
+*/
+
+
+
+
+/*** CONTENT QUARTZ PAGE ***/
+.quartz {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+
+}
+.quartz img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+
+}
+
+.cat-automatique {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+.cat-automatique img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.quartz img.portrait {
+}
+.cat-automatique img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.autres-montres {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.autres-montres img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.cat-montre1 {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.cat-montre1 img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.autres-montres img.portrait {
+}
+.cat-montre1 img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.text1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+/*** CONTENT QUARTZ PAGE ***/
+.quartz {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+
+}
+.quartz img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+
+}
+.quartz img.portrait {
+}
+.automat img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.autres-montres {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  border: 0px;
+}
+.autres-montres img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.autres-montres img.portrait {
+}
+.section_quartz img.portrait {
+
+  width: 100%;
+  height: auto;
+}
+
+.dark {
+  background-color: black;
+}
+.identifiant {
+  text-align: center;
+  margin-top: 20px;
+  font-color: #957850;
+}
+.but {
+  margin-top: 20px;
+  text-align: center;
+  font-color: #957850;
+}
+
+.but p {
+  font-color: #957850;
+}
+
+.section_manuelles img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+
+.marques img.portrait {
+  width: 100%;
+  height: auto;
 }
