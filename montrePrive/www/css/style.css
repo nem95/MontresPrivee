@@ -1,4 +1,10 @@
-/*** HEADER ET MENU ***/
+@font-face {  font-family: "helvetica";  src: url('../font/helveticalight.otf'); }
+
+/*** HEADER ET  MENU ***/
+
+.previous-title {
+  display: none !important; 
+}
 
 .header-transparent{
   background-color: #000;
@@ -6,7 +12,7 @@
 }
 .logo{
   width: 30%;
-  margin-top: 8px;
+  
 }
 .icon-menu{
   position: absolute;
@@ -74,9 +80,7 @@ a{
 /*** ADAM CSS ***/
 .overlay{
   position: relative;
-  top: 0;
-  right: 0;
-  width: 100%;
+
   height: 100%;
   background-color: rgba(0, 0 , 0 , 0.4);
 }
@@ -95,6 +99,7 @@ a{
   top: 50%;
   height: auto;
   width: 100%;
+
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
@@ -300,8 +305,11 @@ img {
   text-align: center;
   color: white;
   font-size: 30px;
+  font-family: helvetica;
 }
-
+p {
+  font-family: 'helvetica';
+}
 /*** CONTENT QUARTZ PAGE ***/
 .quartz {
   position: relative;
@@ -354,6 +362,18 @@ img {
   margin-top: 20px;
   font-color: #957850;
 }
+.identifiant img {
+  width: 200px;
+}
+.connexion {
+  text-align: center;
+
+}
+.nouveau-compte {
+  text-align: center;
+  margin-top: 150px;
+ 
+}
 .but {
   margin-top: 20px;
   text-align: center;
@@ -364,6 +384,30 @@ img {
   font-color: #957850;
 }
 
+<<<<<<< HEAD
+
+
+/***PAGES PRODUITS***/
+
+.validation .button {
+  text-align: center;
+}
+
+.produit {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.produit img {
+  height: 400px;
+  
+
+}
+.produit img.portrait {
+  width: 100%;
+  height: 100%;
+}
+=======
 .section_manuelles img.portrait {
   width: 100%;
   height: auto;
@@ -373,4 +417,9 @@ img {
 .marques img.portrait {
   width: 100%;
   height: auto;
+}
+>>>>>>> naim
+
+.list:hover a{
+    color: red;
 }

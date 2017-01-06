@@ -1,5 +1,7 @@
-<ion-view   ng-controller="automatiqueController">
+<ion-view view-title='<img src="img/logo.png" alt="" class="logo">' ng-controller="automatiqueController">
+
     <ion-content scroll='true'>
+
 
       <div class="cat-automatique">
         <div><img src="{{cover}}" alt="" ></div>
@@ -10,7 +12,7 @@
       </div>
 
       <div class="cat-montre1" ng-repeat="montres in montre track by $index">
-        <img src="{{montres}}" alt="Photo2">
+        <a href="#/selection-automatique/{{montres.id}}"><img src="{{montres.img}}" alt="Photo2"></a>
       </div>
 
     </ion-content>
