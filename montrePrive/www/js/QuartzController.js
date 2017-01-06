@@ -1,26 +1,44 @@
 angular.module("QuartzController", [])
 
-  .controller('quartzController', function($scope, $stateParams) {
+  .controller('quartzController', function($scope, $stateParams, $http) {
 
       $scope.montres="http://www.ablogtowatch.com/wp-content/uploads/2016/05/Rolex-Daytona-116508-yellow-gold-green-watch-12.jpg"
       //on declare le scope slide, qui pourra etre utilisé dans le slider dans la vue home.html
       $scope.montresfond = [
         { 
-          img :  "http://www.alux.com/wp-content/uploads/2014/03/Audemars-Piguet-Royal-Oak-Date.jpg",
+          img :  "http://www.ablogtowatch.com/wp-content/uploads/2016/01/Audemars-Piguet-Royal-Oak-Double-Balance-Wheel-Openworked-Watch-aBlogtoWatch-1.jpg",
+          img1 : "http://logos-download.com/wp-content/uploads/2016/03/Rolex_logo.png",
           id : 0
         },
         { 
           img :  "http://www.hublot.com/templates/joostrap-hublot-v2/images/craftsmanship/materials/hublot-material-rubber.jpg",
+          img1 : "https://s-media-cache-ak0.pinimg.com/600x315/f1/94/54/f1945497c106e472d85d5a5c5c7b10cf.jpg",
           id : 1
         },{ 
           img :  "http://www.bucherer.com/sites/default/files/styles/img_style_2560/public/watches/hero/AudermarsPiguet_Header.jpg?itok=p6zC0RhL&timestamp=1407433874",
+          img1 : "https://s-media-cache-ak0.pinimg.com/236x/73/f6/7b/73f67bc3ea115510b6b8f4ae479a882b.jpg",
           id : 2
         },{ 
           img :  "http://www.montres-de-luxe.com/photo/art/default/673883-823245.jpg?v=1289479443",
+          img1 : "https://s-media-cache-ak0.pinimg.com/736x/66/df/dd/66dfddb8979887236806cbb174fb086e.jpg",
           id : 3
         },
     
       ];
+
+         $http({
+          method: 'GET',
+          url: 'http://localhost/api_woocommerce/recup.php'
+      }).then(function successCallback(response) {
+          console.log(response.data);
+          //var json_decode = angular.fromJson(response.data);
+          //console.log(json_decode);
+
+      }, function errorCallback(response) {
+          // called asynchronously if an error occurs
+          // or server returns response with an error status.
+          console.log(response);
+      });
 
      
       
@@ -100,8 +118,7 @@ angular.module("QuartzController", [])
    // A confirm dialog
    $scope.showConfirm = function() {
      var confirmPopup = $ionicPopup.confirm({
-       title: 'Consume Ice Cream',
-       template: 'Vous avez une heure pour réalisé votre achat sur notre site internet EoWatch sans quoi, la montre pourra être vendue à un autre client'
+       title: 'Vous avez une heure pour réalisé votre achat sur notre site internet EoWatch sans quoi, la montre pourra être vendue à un autre client',
      });
      confirmPopup.then(function(res) {
        if(res) {
@@ -122,4 +139,5 @@ angular.module("QuartzController", [])
        console.log('Thank you for not eating my delicious ice cream cone');
      });
    };
+
 });
