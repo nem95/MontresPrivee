@@ -12,7 +12,7 @@
       </div>
 
       <div class="cat-montre1" ng-repeat="montres in montre track by $index">
-        <a href="#/selection-automatique/{{montres.id}}"><img src="{{montres.img}}" alt="Photo2"></a>
+        <a href="#/selection-automatique/{{montres.id}}"><img src="{{ montres.images[0].src }}" alt="{{ montres.name }}"></a>
       </div>
 
     </ion-content>

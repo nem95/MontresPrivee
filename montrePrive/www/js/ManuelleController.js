@@ -1,6 +1,6 @@
-angular.module("AutomatiqueController", [])
+angular.module("ManuelleController", [])
 
-    .controller('automatiqueController', function($scope, $http) {
+    .controller('manuelleController', function($scope, $http) {
 
         //on declare le scope slide, qui pourra etre utilisé dans le slider dans la vue home.html
         $scope.cover="http://www.clairediterzi.fr/wp-content/uploads/2015/12/montre-automatique.jpg";
@@ -27,7 +27,7 @@ angular.module("AutomatiqueController", [])
 
         $http({
           method: 'GET',
-          url: 'http://localhost:8888/BAP-MontrePrivee/MontresPrivee/API/auto.php'
+          url: 'http://localhost:8888/BAP-MontrePrivee/MontresPrivee/API/manu.php'
         }).then(function successCallback(response) {
           console.log(response.data);
           $scope.montre = response.data;
@@ -41,7 +41,7 @@ angular.module("AutomatiqueController", [])
 
     })
 
-    .controller('autoController', function($scope, $stateParams, $http) {
+    .controller('manuController', function($scope, $stateParams, $http) {
 
         $scope.cover="http://www.ablogtowatch.com/wp-content/uploads/2016/05/Rolex-Daytona-116508-yellow-gold-green-watch-12.jpg"
         //on declare le scope slide, qui pourra etre utilisé dans le slider dans la vue home.html
@@ -50,7 +50,7 @@ angular.module("AutomatiqueController", [])
 
         $http({
             method: 'GET',
-            url: 'http://localhost:8888/BAP-MontrePrivee/MontresPrivee/API/auto.php'
+            url: 'http://localhost:8888/BAP-MontrePrivee/MontresPrivee/API/manu.php'
         }).then(function successCallback(response) {
             console.log(response.data);
             let montres = response.data;

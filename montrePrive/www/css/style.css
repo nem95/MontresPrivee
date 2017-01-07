@@ -1,4 +1,4 @@
-@font-face {  font-family: "helvetica";  src: url('../font/helveticalight.otf'); }
+@font-face {  font-family: "lato";  src: url('../font/Lato-Regular.ttf'); }
 
 /*** HEADER ET  MENU ***/
 
@@ -11,7 +11,11 @@
   background-size: 0;
 }
 .logo{
-  width: 30%;
+  height: 60%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
   
 }
 .icon-menu{
@@ -21,7 +25,7 @@
   width: 8%;
   height: 25px;
 }
-.bar, .title{height: 60px !important;}
+/*.bar, .title{height: 60px !important;}*/
 .avatar{
   width: 50%;
   margin-left: auto;
@@ -81,7 +85,7 @@ a{
 .overlay{
   position: relative;
 
-  height: 150px;
+  height: 15vh;
   background-color: rgba(0, 0 , 0 , 0.4);
 }
 .automat {
@@ -305,10 +309,10 @@ img {
   text-align: center;
   color: white;
   font-size: 30px;
-  font-family: helvetica;
+  font-family: lato;
 }
 p {
-  font-family: 'helvetica';
+  font-family: 'lato';
 }
 /*** CONTENT QUARTZ PAGE ***/
 .quartz {
@@ -384,9 +388,6 @@ p {
   font-color: #957850;
 }
 
-<<<<<<< HEAD
-
-
 /***PAGES PRODUITS***/
 
 .validation .button {
@@ -407,18 +408,6 @@ p {
   width: 100%;
   height: 100%;
 }
-=======
-.section_manuelles img.portrait {
-  width: 100%;
-  height: auto;
-}
-
-
-.marques img.portrait {
-  width: 100%;
-  height: auto;
-}
->>>>>>> naim
 
 .list:hover a{
     color: red;

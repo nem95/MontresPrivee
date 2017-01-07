@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic', 'HomeController','QuartzController','AutomatiqueController'])
+angular.module('starter', ['ionic', 'HomeController','QuartzController','AutomatiqueController', 'ManuelleController'])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
@@ -44,9 +44,17 @@ angular.module('starter', ['ionic', 'HomeController','QuartzController','Automat
     url: "/selection-automatique/:id",
     templateUrl: 'templates/selection-automatique.html'
   })
+  $stateProvider.state('selection-manuelle', {
+    url: "/selection-manuelle/:id",
+    templateUrl: 'templates/selection-manuelle.html'
+  })
     $stateProvider.state('automatique', {
     url: '/automatique',
     templateUrl: 'templates/automatique.html'
+  })
+  $stateProvider.state('manuelle', {
+    url: '/manuelle',
+    templateUrl: 'templates/manuelle.html'
   })
   $stateProvider.state('model', {
     url: '/model/:id',
